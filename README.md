@@ -1,3 +1,5 @@
+0x16. C - Simple Shell
+
 Important message from Julien
 It’s time for the famous Simple Shell project. This is one of the most anticipated project and also one that will challenge you a lot about everything you have learn so far:
 
@@ -18,7 +20,7 @@ NEVER copy any code, never look at solution (and never give any solution to your
 ALWAYS write code alone from scratch after you get help to check that you have actually understood. If you can not do it, you have not understood enough, and need to study more. Do not rewrite code from memory, but from understanding.
 I saw some of you sharing resources with each other already. Tutorials on how to do the shell step by step with all the code associated with these, or even video and documents with the solution without even any explanation. This is not the right way to learn. Please do not be tempted by these links. They will only push you to take shortcuts and / or cheat. And trust me, you will be caught. Kimba is not a joke and he is here to remind you why you are here.
 
-While we encourage the use of ChatGPT and co in the framework (also, not right away, but at the right step, see framework), it is important to understand that the same rules apply to these AI tools (again, in the context of learning. When you will work it will be completely different, but context matters). At no point does it say that you are allowed to use copilot or ChatGPT to code the solution. If you do, you will get 200% (for a few hours), understand 0, learn 0, and you will be caught for cheating 100%, and then your score for both you and your partner will be 0%. If you don’t get how to use ChatGPT and other AI tools in the context of learning, simply do not use them.
+While we encourage the use of ChatGPT and co in the framework ,it is important to understand that the same rules apply to these AI tools (again, in the context of learning. When you will work it will be completely different, but context matters). At no point does it say that you are allowed to use copilot or ChatGPT to code the solution. If you do, you will get 200% (for a few hours), understand 0, learn 0, and you will be caught for cheating 100%, and then your score for both you and your partner will be 0%. If you don’t get how to use ChatGPT and other AI tools in the context of learning, simply do not use them.
 
 The reality is that at this point of the program, if you have not cheated before, you have everything you need to complete the project with what you have learned + the page “Everything you need to know to start coding your own shell” https://intranet.alxswe.com/concepts/64
 
@@ -94,5 +96,8 @@ GitHub
 More Info
 Output
 Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
-The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
-Example of error with sh:
+The only difference is when you print an error, the name of the program must be equivalent to your argv[0]
+
+TEAM:
+
+Bati younes and yassine chergaoui

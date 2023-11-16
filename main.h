@@ -84,7 +84,7 @@ char *duplicate_string(const char *str);
 int compare_strings(char *s1, char *s2);
 char *tokenize_string(char string[], const char *delimiter);
 
-/* converters.c */
+/* convesrsion .c */
 int count_digits(int num);
 int string_length(const char *str);
 char *integer_to_string(int num);
@@ -123,7 +123,7 @@ int _setenv(myshell *sh);
 int _unsetenv(myshell *sh);
 char *create_env_var(char *var_name, char *var_value);
 
-/* cd_environment.c */
+/* envirnomental */
 int compare_env_varname(const char *variable_name, const char *partial_name);
 void set_cd(char *var_name, char *var_value, myshell *sh);
 void cd(myshell *sh);
@@ -136,19 +136,19 @@ myseparator *append_separator(myseparator **head, char sep);
 mycline *append_commandl(mycline **head, char *cl);
 int compare_cs(char str[], const char *lim);
 
-/* errors_handling.c */
+/* errors_handling_2.c */
 char *exit_error(myshell *sh);
 char *env_error(myshell *sh);
 int handle_errors(myshell *sh, int error);
 int command_error(char *ddir, myshell *sh);
 char *not_found_error(myshell *sh);
 
-/* cd_errors.c */
+/* error_handling.c */
 char *cd_error(myshell *sh);
 char *cd_error_concat(myshell *sh, char *message, char *error, char *line);
 char *path_error(myshell *sh);
 
-/* builtins.c */
+/* built */
 int change_directory(myshell *sh);
 void previous_dir(myshell *sh);
 void home_dir(myshell *sh);

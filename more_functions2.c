@@ -6,7 +6,7 @@
  * Return: 0 if no numbers in string, converted number otherwise
  *       -1 on error
  */
-int _erratoi_(char *s)
+int _erratoi(char *s)
 {
 	int i = 0;
 	unsigned long int result = 0;
@@ -35,11 +35,11 @@ int _erratoi_(char *s)
  * Return: 0 if no numbers in string, converted number otherwise
  *        -1 on error
  */
-void _print_error(info_t *info, char *estr)
+void print_error(info_t *info, char *estr)
 {
 	_eputs(info->fname);
 	_eputs(": ");
-	_print_d(info->line_count, STDERR_FILENO);
+	print_d(info->line_count, STDERR_FILENO);
 	_eputs(": ");
 	_eputs(info->argv[0]);
 	_eputs(": ");
@@ -47,15 +47,15 @@ void _print_error(info_t *info, char *estr)
 }
 
 /**
- * _print_d - function prints a decimal (integer) number (base 10)
+ * print_d - function prints a decimal (integer) number (base 10)
  * @input: the input
  * @fd: the filedescriptor to write to
  *
  * Return: number of characters printed
  */
-int _print_d(int input, int fd)
+int print_d(int input, int fd)
 {
-	int (*__putchar)(char) = _putchar_;
+	int (*__putchar)(char) = _putchar;
 	int i, count = 0;
 	unsigned int _abs_, current;
 
@@ -93,7 +93,7 @@ int _print_d(int input, int fd)
  *
  * Return: string
  */
-char *_convert_number(long int num, int base, int flags)
+char *convert_number(long int num, int base, int flags)
 {
 	static char *array;
 	static char buffer[50];
@@ -127,7 +127,7 @@ char *_convert_number(long int num, int base, int flags)
  *
  * Return: Always 0;
  */
-void _remove_comments(char *buf)
+void remove_comments(char *buf)
 {
 	int i;
 
